@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suffyan's Driving School - Learn to Drive with Confidence</title>
+    <!-- Load Tailwind CSS for instant professional styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Sets the default font and ensures smooth scrolling */
+        body { font-family: "Inter", sans-serif; scroll-behavior: smooth; }
+        .service-card { transition: transform 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); }
+        .cta-button { transition: background-color 0.3s ease, transform 0.1s ease; }
+        .cta-button:active { transform: scale(0.98); }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 1. NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-blue-800 text-white shadow-lg p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-7xl">
+            <!-- Logo/School Name -->
+            <h1 class="text-2xl font-bold tracking-tight">
+                <a href="#hero" class="hover:text-yellow-300 transition duration-300">Suffyan's Driving School</a>
+            </h1>
+            <!-- Navigation Links -->
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#hero" class="hover:text-yellow-300 transition duration-300">Home</a>
+                <a href="#about" class="hover:text-yellow-300 transition duration-300">Why Us?</a>
+                <a href="#services" class="hover:text-yellow-300 transition duration-300">Courses</a>
+                <a href="#pricing" class="hover:text-yellow-300 transition duration-300">Pricing</a>
+                <a href="#contact" class="hover:text-yellow-300 transition duration-300">Book Now</a>
+            </nav>
+            <!-- Call to Action Button for Mobile -->
+            <a href="tel:+441234567890" class="md:hidden bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-semibold hover:bg-yellow-300 cta-button">Call Now</a>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION (Main banner) -->
+    <section id="hero" class="py-16 md:py-24 text-center bg-cover bg-center" style="background-image: url('https://placehold.co/1200x600/1e3a8a/ffffff?text=Professional+Driving+Car');">
+        <div class="bg-black bg-opacity-50 py-10">
+            <div class="container mx-auto max-w-4xl px-4">
+                <p class="text-yellow-300 uppercase tracking-widest text-lg mb-2">Drive Safe. Pass Fast.</p>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                    Start Your Journey with <span class="text-yellow-400">Suffyan's Driving School</span>
+                </h2>
+                <p class="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                    Expert, patient instruction and the highest pass rate in the area. Get on the road to independence today.
+                </p>
+                <!-- Call to Action Button -->
+                <a href="#contact" class="bg-yellow-400 text-blue-900 text-lg font-bold px-10 py-4 rounded-full shadow-xl hover:bg-yellow-300 cta-button">
+                    Book Your First Lesson Now!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT US / WHY CHOOSE US -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">Why Choose Suffyan's?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 rounded-lg shadow-lg bg-white border-t-4 border-yellow-400">
+                    <div class="text-4xl text-blue-800 mb-4">🚗</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Modern Vehicles</h3>
+                    <p class="text-gray-600">Learn in the latest, dual-control cars for maximum safety and comfort.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg bg-white border-t-4 border-yellow-400">
+                    <div class="text-4xl text-blue-800 mb-4">🏆</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">High Pass Rate</h3>
+                    <p class="text-gray-600">Our students consistently pass their test well above the national average.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg bg-white border-t-4 border-yellow-400">
+                    <div class="text-4xl text-blue-800 mb-4">⌚</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Flexible Scheduling</h3>
+                    <p class="text-gray-600">Lessons available 7 days a week, including evenings and weekends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION (Courses) -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">Our Driving Courses</h2>
+
+            <!-- Grid for Service Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Service Card 1: Standard Lessons -->
+                <div class="service-card p-6 rounded-xl shadow-lg bg-blue-50">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800">Standard Hourly Lessons</h3>
+                    <p class="text-gray-700 mb-4">The perfect option for beginners to build foundational skills at their own pace.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-6">
+                        <li>One-on-one instruction</li>
+                        <li>Detailed progress tracking</li>
+                        <li>Flexible pickup/drop-off</li>
+                    </ul>
+                    <a href="#contact" class="text-yellow-600 font-semibold hover:text-yellow-700">Learn More &rarr;</a>
+                </div>
+
+                <!-- Service Card 2: Intensive Course -->
+                <div class="service-card p-6 rounded-xl shadow-2xl bg-yellow-100 border-4 border-yellow-400">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800">Intensive Pass Course</h3>
+                    <p class="text-gray-700 mb-4">Designed for quick learning and preparing you to take your test in weeks, not months.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-6">
+                        <li>15-30 hours of concentrated driving</li>
+                        <li>Theory test support included</li>
+                        <li>Guaranteed test booking</li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-700">Book Intensive &rarr;</a>
+                </div>
+
+                <!-- Service Card 3: Refresher Course -->
+                <div class="service-card p-6 rounded-xl shadow-lg bg-blue-50">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800">Refresher & Motorway</h3>
+                    <p class="text-gray-700 mb-4">Ideal for licensed drivers who need to boost confidence or tackle new road types.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-6">
+                        <li>Motorway driving lessons</li>
+                        <li>Parking skill workshops</li>
+                        <li>Night driving practice</li>
+                    </ul>
+                    <a href="#contact" class="text-yellow-600 font-semibold hover:text-yellow-700">Learn More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRICING SECTION -->
+    <section id="pricing" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">Simple & Transparent Pricing</h2>
+
+            <!-- Pricing Table -->
+            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Best Value Packages</h3>
+
+                    <!-- Pricing Item 1 -->
+                    <div class="flex justify-between items-center border-b pb-4 mb-4">
+                        <span class="text-xl font-semibold text-gray-700">Single Hour Lesson</span>
+                        <span class="text-2xl font-bold text-blue-600">£35</span>
+                    </div>
+
+                    <!-- Pricing Item 2 (Popular) -->
+                    <div class="flex justify-between items-center border-b pb-4 mb-4 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                        <div>
+                            <span class="text-xl font-semibold text-gray-700 block">5 Hour Block Booking</span>
+                            <span class="text-sm text-yellow-700 font-medium">Most Popular - Save £10</span>
+                        </div>
+                        <span class="text-3xl font-extrabold text-blue-800">£165</span>
+                    </div>
+
+                    <!-- Pricing Item 3 -->
+                    <div class="flex justify-between items-center pb-4">
+                        <span class="text-xl font-semibold text-gray-700">10 Hour Block Booking</span>
+                        <span class="text-2xl font-bold text-blue-600">£320</span>
+                    </div>
+                </div>
+
+                <div class="bg-blue-100 p-6 text-center">
+                    <p class="text-gray-700 mb-4">Ready to start saving and learning?</p>
+                    <a href="#contact" class="bg-blue-800 text-white font-bold px-8 py-3 rounded-full shadow-md hover:bg-blue-700 cta-button">
+                        View Full Price List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION (Book Now) -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">Book Your First Lesson</h2>
+            <p class="text-center text-gray-600 mb-8">Fill out the form below or call us directly to book your slot.</p>
+
+            <!-- Simple Contact Form (HTML only, no backend functionality) -->
+            <form action="#" method="POST" class="bg-white p-8 rounded-xl shadow-2xl space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message / Best Time to Call</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-400 text-blue-900 font-bold px-4 py-3 rounded-lg shadow-md hover:bg-yellow-300 cta-button">
+                    Request a Call Back
+                </button>
+            </form>
+
+            <p class="text-center text-sm text-gray-500 mt-6">
+                Prefer to call? **Phone: 0123 456 7890** | **Email: suffyan@driving.co.uk**
+            </p>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-gray-800 text-white p-6 text-center text-sm">
+        <div class="container mx-auto max-w-7xl">
+            <p>&copy; 2025 Suffyan's Driving School. All rights reserved.</p>
+            <p class="mt-1">
+                <a href="#hero" class="hover:text-yellow-400 transition duration-300">Home</a> |
+                <a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
